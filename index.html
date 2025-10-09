@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Quotation | Vedmata Web Designing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    :root{
+      --accent:#ff7a1a; /* warm orange */
+      --muted:#6b6b6b;
+      --card-bg:#ffffff;
+      --page-bg: linear-gradient(180deg,#fffaf5 0%, #fff 60%);
+    }
+    html,body{height:100%;}
+    body{font-family:'Poppins',sans-serif;background:var(--page-bg);color:#222;margin:0;padding:40px 20px;}
+    .wrap{max-width:1100px;margin:0 auto;}
+    .quotation{background:var(--card-bg);border-radius:16px;overflow:hidden;box-shadow:0 10px 35px rgba(20,20,20,0.08);}
+
+    /* Hero */
+    .hero{display:flex;align-items:center;gap:20px;padding:28px 34px;background:linear-gradient(90deg,var(--accent),#ffad5a);color:#fff}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:12px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .hero h1{margin:0;font-size:1.4rem;line-height:1.1}
+    .hero p{margin:0;opacity:0.95}
+
+    /* content grid */
+    .content{display:grid;grid-template-columns:1fr 360px;gap:30px;padding:28px}
+    @media (max-width:900px){.content{grid-template-columns:1fr;padding:18px} .hero{padding:18px} }
+
+    /* left column */
+    .section h3{color:var(--accent);margin-top:0}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    @media (max-width:700px){.features{grid-template-columns:1fr}}
+    .feature{display:flex;gap:12px;align-items:flex-start;background:#fff7f1;border-radius:8px;padding:10px}
+    .feature i{font-size:20px;color:var(--accent)}
+  /* tech icons */
+  .tech-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:#fff;margin-right:10px;font-size:18px}
+  .icon-python{background:linear-gradient(135deg,#3776ab 0%,#ffd43b 100%);color:#0b2d57}
+  .icon-django{background:#092e20}
+  .icon-next{background:#000;color:#fff}
+  .icon-chat{background:linear-gradient(135deg,#00bfa5 0%,#00897b 100%)}
+  .icon-sections{background:#6f42c1}
+  .icon-mobile{background:#0d6efd}
+  .icon-domain{background:var(--accent)}
+  .icon-email{background:#ffb703;color:#1a1a1a}
+  .icon-vps{background:#6c757d}
+  .icon-security{background:#dc3545}
+  .icon-support{background:#20c997}
+
+    table.table{background:transparent}
+    .table thead th{background:#fff8f2;border-bottom:0;color:#5b5b5b}
+    .table tbody td{vertical-align:middle}
+
+    /* right column (price card) */
+    .price-card{background:linear-gradient(180deg,#fff 0%,#fffefc 100%);border-radius:12px;padding:18px;border:1px solid rgba(245,150,60,0.08)}
+    .price-large{font-size:2.1rem;font-weight:800;color:var(--accent)}
+    .price-sub{color:var(--muted);font-weight:600}
+  .price-highlight{color:var(--accent);font-weight:900}
+  .discount-amount{color:#d9534f;font-weight:900}
+  .strike-price{color:#8b8b8b;text-decoration:line-through;font-weight:700}
+    .discount{display:inline-block;background:#fff2e6;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;margin-left:6px}
+    .btn-cta{display:block;width:100%;border-radius:10px;padding:10px 14px;font-weight:700}
+    .btn-whatsapp{background:#25D366;border:none;color:#fff}
+    .btn-print{background:#0d6efd;border:none;color:#fff}
+
+    .note{background:#fffaf0;padding:12px;border-left:4px solid #ffd0a8;border-radius:8px;margin-top:12px;color:#6b6b6b}
+
+    /* footer */
+    .quotation-footer{background:#0f1720;color:#fff;padding:12px 20px;text-align:center;font-size:0.95rem}
+
+    /* small animations */
+    .fade-up{opacity:0;transform:translateY(8px);animation:fadeUp .6s forwards}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="quotation">
+    <div class="hero">
+      <div class="brand">
+        <div class="logo"><i class="bi bi-laptop"></i></div>
+        <div>
+          <h1>Website Quotation</h1>
+          <p class="small">For <strong>प्रांतीय युवा प्रकोष्ठ पटना-बिहार</strong></p>
+        </div>
+      </div>
+      <div class="ms-auto text-end small">
+        <div style="font-weight:700">Vedmata Web Designing</div>
+        <div style="opacity:0.95">Owner: Divy Mohan Singh • <i class="bi bi-telephone"></i> 9506933715</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="section fade-up" style="animation-delay:.05s">
+          <h3>Project Overview</h3>
+          <div class="features mb-3">
+            <div class="feature"><span class="tech-icon icon-python"><strong style="font-size:14px">Py</strong></span><div><strong>Python</strong><div class="text-muted small">Server-side logic</div></div></div>
+            <div class="feature"><span class="tech-icon icon-django"><strong style="font-size:14px">Dj</strong></span><div><strong>Django</strong><div class="text-muted small">Robust backend & admin</div></div></div>
+            <div class="feature"><span class="tech-icon icon-next"><strong style="font-size:14px">Nx</strong></span><div><strong>Next.js</strong><div class="text-muted small">Fast frontend & SEO</div></div></div>
+            <div class="feature"><span class="tech-icon icon-chat"><strong style="font-size:14px">AI</strong></span><div><strong>Chatbot</strong><div class="text-muted small">AI assistant for users</div></div></div>
+            <div class="feature"><span class="tech-icon icon-sections"><strong style="font-size:14px">S</strong></span><div><strong>Sections</strong><div class="text-muted small">Home, About, Events, Volunteers, Blog, Gallery</div></div></div>
+            <div class="feature"><span class="tech-icon icon-mobile"><strong style="font-size:14px">UI</strong></span><div><strong>Mobile UI</strong><div class="text-muted small">Mobile-first responsive design</div></div></div>
+            <div class="feature"><span class="tech-icon icon-domain"><i class="bi bi-globe" style="color:#fff;font-size:16px"></i></span><div><strong>Domain</strong><div class="text-muted small">Included Free (1 Year)</div></div></div>
+            <div class="feature"><span class="tech-icon icon-email"><i class="bi bi-envelope-fill" style="color:#fff;font-size:14px"></i></span><div><strong>Emails</strong><div class="text-muted small">2 Emails · total 40GB storage</div></div></div>
+            <div class="feature"><span class="tech-icon icon-vps"><strong style="font-size:12px">VPS</strong></span><div><strong>VPS</strong><div class="text-muted small">Private Server · 30GB Storage</div></div></div>
+            <div class="feature"><span class="tech-icon icon-security"><i class="bi bi-shield-lock-fill" style="color:#fff;font-size:14px"></i></span><div><strong>Security</strong><div class="text-muted small">Firewall · SSL · Monitoring</div></div></div>
+            <div class="feature"><span class="tech-icon icon-support"><i class="bi bi-headset" style="color:#fff;font-size:14px"></i></span><div><strong>Support</strong><div class="text-muted small">1 Year Technical Support</div></div></div>
+          </div>
+        </div>
+
+        <div class="section fade-up" style="animation-delay:.15s">
+          <h3>Hosting & Server</h3>
+          <table class="table">
+            <thead>
+              <tr><th>Component</th><th>Details</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><i class="bi bi-globe"></i> Domain</td><td>1 Year Free</td></tr>
+              <tr><td><i class="bi bi-envelope"></i> Emails</td><td>2 Official Emails · total 40GB storage</td></tr>
+              <tr><td><i class="bi bi-server"></i> VPS Hosting</td><td>Private Server · 30GB Storage</td></tr>
+              <tr><td><i class="bi bi-shield-lock"></i> Security</td><td>Firewall · SSL · Monitoring</td></tr>
+              <tr><td><i class="bi bi-headset"></i> Support</td><td>1 Year Technical Support</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section fade-up" style="animation-delay:.25s">
+          <h3>Timeline</h3>
+          <ul>
+            <li>Complete Website Delivery: <strong>1 Month</strong> from Payment</li>
+          </ul>
+
+          <h3>Terms & Payment</h3>
+          <ul>
+            <li>Payment Split: <strong>60% before development</strong> and <strong>40% after development</strong>.</li>
+            <li>Advance (60% of ₹25,000): <strong class="price-highlight">₹ 15,000</strong></li>
+            <li>Balance (40% of ₹25,000): <strong>₹ 10,000</strong> payable on delivery.</li>
+            <li>Invoices will be shared once payment is confirmed.</li>
+          </ul>
+
+          <h3>Notes</h3>
+          <div class="note">Includes 1 Year Complimentary Support. Future upgrades or paid API integrations charged separately.</div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="price-card fade-up" style="animation-delay:.08s">
+          <div class="d-flex align-items-center mb-2">
+            <div>
+              <div class="price-sub">Quotation Summary</div>
+              <div class="text-muted small">Professional package tailored for your organization</div>
+            </div>
+            <div class="ms-auto text-end">
+              <div class="discount">Special Offer</div>
+            </div>
+          </div>
+
+          <hr>
+          <div class="d-flex justify-content-between"><div>Website Design & Development</div><div class="price-highlight">₹ 25,000</div></div>
+          <div class="d-flex justify-content-between"><div>Hosting + Emails <small class="text-muted">(Domain: Free)</small></div><div>₹ 8,000</div></div>
+          <div class="d-flex justify-content-between"><div>Chatbot Integration</div><div>₹ 2,000</div></div>
+          <hr>
+          <div class="d-flex justify-content-between fw-600"><div>Subtotal</div><div class="strike-price">₹ 35,000</div></div>
+          <div class="d-flex justify-content-between text-danger"><div>Discount</div><div class="discount-amount">- ₹ 10,000</div></div>
+
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <div>
+              <div class="text-muted small">Advance (60%)</div>
+              <div class="price-sub">₹ 15,000</div>
+              <div class="price-large"><span class="price-highlight">₹ 25,000</span></div>
+              <div class="text-muted small">Final Payable Amount</div>
+            </div>
+            <div style="min-width:120px">
+              <button class="btn btn-cta btn-whatsapp mb-2" id="waBtn"><i class="bi bi-whatsapp"></i> Contact</button>
+              <button class="btn btn-cta btn-print" id="printBtn"><i class="bi bi-printer"></i> Print / Save PDF</button>
+            </div>
+          </div>
+
+          <div class="mt-3 small text-muted">Payment terms, milestones and delivery schedule will be shared after confirmation.</div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="quotation-footer">An Initiative by IITians • Vedmata Web Designing • <strong>Divy Mohan Singh</strong> • 📞 9506933715</div>
+  </div>
+</div>
+
+<script>
+  // simple interactions
+  document.getElementById('waBtn').addEventListener('click', function(){
+    const text = encodeURIComponent("Hello Divy Mohan Singh, I'm interested in the website quotation for Provincial Youth Cell, Patna Bihar.");
+    window.open('https://wa.me/919506933715?text='+text,'_blank');
+  });
+  document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+
+  // reveal animations
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.fade-up').forEach(function(el,i){
+      el.style.animationDelay = (i*80)+'ms';
+      el.classList.add('visible');
+    });
+  });
+</script>
+
+</body>
+</html>
